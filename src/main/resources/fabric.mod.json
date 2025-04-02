@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "musheor",
+  "version": "${version}",
+  "name": "Musheor",
+  "description": "A meteor addon by musheck with QoL features and fixed modules.",
+  "authors": [
+    "musheck"
+  ],
+  "contact": {
+    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "musheor.musheck_addon"
+    ]
+  },
+  "mixins": [
+    "musheor.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
