@@ -3,7 +3,7 @@
   "id": "musheor",
   "version": "${version}",
   "name": "Musheor",
-  "description": "A meteor addon by musheck with QoL features and fixed modules.",
+  "description": "A meteor addon by musheck with QoL features and fixes.",
   "authors": [
     "musheck"
   ],
