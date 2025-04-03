@@ -4,12 +4,16 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
             persist-credentials: false
+            
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
